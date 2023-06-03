@@ -1,0 +1,60 @@
+<section class="body">
+<div class="product">
+    <div class="image">
+        <img src="{{product.image}}" alt="">
+    </div>
+    <div class="title">
+        <h4>{{product.name}}</h4>
+        <p>{{product.Masa_netto}}</p>
+        <div class="pricing">
+            <h2>{{product.price}} mdl</h2>
+            <a href="displayAll">
+                <button class="btn" (click)="addToCart(product.id)">Add to cart</button>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="about">
+        <h1>About the product:</h1>
+        <div class="Nutritional-properties">
+        <h3>Nutritional properties:</h3>
+        <div class="nutrition">
+            <div class="name">
+                <h5>Caloric value</h5>
+                <h5>Proteins</h5>
+                <h5>Fats</h5>
+                <h5>Carbohydrates</h5>
+            </div>
+            <div class="value">
+                <h5>{{product.Caloric_value}}</h5>
+                <h5>{{product.Proteins}}</h5>
+                <h5>{{product.Fats}}</h5>
+                <h5>{{product.Carbohydrates}}</h5>
+            </div>
+        </div>
+        </div>
+        <div class="general_info">
+            <h3>Informatii generale:</h3> 
+            <div class="info">
+            <div class="name">
+                <h5>Marca</h5>
+                <h5>Producător</h5>
+                <h5>Greutate</h5>
+                <h5>Termen de valabilitate</h5>
+                <h5>Metodă</h5>
+            </div>
+            <div class="value">
+                <h5>{{product.brand}}</h5>
+                <h5>{{product.producer}}</h5>
+                <h5>{{product.Masa_netto}}</h5>
+                <h5>{{product.Termen_de_comercializare}}</h5>
+                <h5>{{product.method}}</h5>
+            </div>
+        </div>              
+    </div>
+    <div class="ingredients">
+        <h3>Ingrediente:</h3>
+        <p>{{product.ingredients}}</p>
+    </div>
+    </div>
+</section>

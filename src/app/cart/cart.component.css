@@ -1,0 +1,167 @@
+.products{
+    margin-top: 20px;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.heading{
+    background-color: rgba(13, 17, 23, 1);
+    display: flex;
+    flex-direction: column;
+    border:  2px solid rgb(164, 164, 164);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.heading h1{
+    margin-bottom: 10px;
+}
+
+
+.header{
+    margin-top: 20px;
+}
+
+h1, h2, h4,.btn, p{ 
+    background-color: transparent; 
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.category{
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border:  2px solid rgb(164, 164, 164);
+    border-radius: 10px;
+
+    text-decoration: none;
+}
+
+.about{
+    background-color: transparent;
+   margin-left: 20px;
+}
+
+.category,
+.options{
+    background-color: rgba(13, 17, 23, 1);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.masa_netto{
+    margin-top: 5px;
+    color: rgb(164, 164, 164);
+}
+
+.image{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;    
+}
+
+.image img{
+    width: 100px;
+    border-radius: 10px;
+}
+.quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.quantity p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about,
+.quantity{
+    background-color: rgba(13, 17, 23, 1);
+}
+
+.product{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.options h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.bnts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.btn{
+    background-color: none;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 12px;
+    width: fit-content;
+    /* margin-left: 20px; */
+    padding: 5px;
+}
+
+.btn:hover,
+.btn1:hover {
+    cursor: pointer;
+    border: 2px solid rgba(227,88,240,0.46);
+    color: pink;
+    transition: 200ms ease-in-out;
+}
+
+.btn1{
+    background-color: none;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.category:hover{
+    cursor: pointer;
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+}
+
+
+.xxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}

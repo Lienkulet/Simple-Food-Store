@@ -1,0 +1,41 @@
+<div class="displayProducts">
+    <h1>Our products:</h1>
+    <div class="category" *ngFor="let category of categoriess">
+        <div class="header">
+            <h4>{{category.categoryName}}</h4>
+        </div>
+        <div class="xxx">
+        <div class="subcategory"  *ngFor="let subcategory of category.items">
+            <!-- <div class="header"> -->
+                <!-- <h4>{{subcategory.subcategoryName}}</h4> -->
+            <!-- </div> -->
+            <div class="products" *ngFor="let product of subcategory.products">
+                <div class="product">
+                    <a href="/product/{{product.id}}" (click)="setProdus(product)">
+                    <div class="image">
+                        <img src="{{product.image}}" alt="">
+                    </div>
+                    <div class="about">
+                        <div class="price">
+                            <h3>{{product.price}} mdl</h3>
+                        </div>
+                        <div class="description">
+                            <p>{{product.name}}</p>
+                        </div>
+                        <div class="footer">
+                            <div class="quantity">
+                                <h4>{{product.Masa_netto}}</h4>
+                            </div>
+                            <div class="btns">
+                                <!-- <a href="/product/{{product.id}}" (click)="setProdus(product)">View</a> -->
+                                <button class="btn" (click)="addToCart(product.id)">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

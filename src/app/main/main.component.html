@@ -1,0 +1,23 @@
+<div class="content">
+    <div class="header">
+        <h1>{{category.categoryName}}</h1>
+    </div>
+    <div class="body">
+        
+        <div class="category" *ngFor="let cat of category.items">
+            <a href="/products/{{cat.subcategory_id}}" (click)="exportSubCategory(cat)">
+                <div class="about">
+                    <h4>{{cat.subcategoryName}}</h4>
+                    <h5 *ngIf="cat.products.length > 1 || cat.products.length < 1; else elseBlock">{{cat.products.length}} products</h5>
+                    <ng-template  #elseBlock>
+                        <h5>{{cat.products.length}} product</h5>
+                    </ng-template>
+                    <a href="/products/{{cat.subcategory_id}}" (click)="exportSubCategory(cat)">View it</a>
+                </div>
+                <div class="image">
+                    <img src="{{cat.subcategoryImg}}" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

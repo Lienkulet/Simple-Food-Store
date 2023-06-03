@@ -1,0 +1,35 @@
+<!-- <div class="content"> -->
+<div class="navbar">
+    <div class="logo">
+        <a href="displayAll">KEDKO</a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Find a poduct (to do)">  <!-- to do -->
+        <button class="btn">
+            <img src="assets/images/search.png" alt="">
+        </button>
+    </div>
+    <div class="cart">
+        <a href="cart" class="cart-btn">
+            <img src="assets/images/cart.png" alt="">
+        </a>
+    </div>
+    <div class="nav-menu">
+        <div  class="collapse-btn" (click)="dispalyMenu()">
+            <img src="assets/images/menu.png" alt="menu">
+        </div>
+        <ul  [ngClass]="type == 0? 'open nav-menu-items' : 'nav-menu-items' ">
+            <li class="nav-item">
+                <h1>Categories: </h1>
+            </li>
+            <li *ngFor="let category of categoriess" class="nav-item">
+                <a href="/main/{{category.category_id}}" (click)="exportCategory(category)" >{{category.categoryName}}</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="body">
+        <router-outlet></router-outlet>      
+</div>
+<!-- </div> -->

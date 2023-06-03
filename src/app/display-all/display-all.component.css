@@ -1,0 +1,166 @@
+.displayProducts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.products,
+.subcategory,
+.xxx{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border-bottom: 2px solid rgb(164, 164, 164);
+}
+
+.header h4{
+ margin-top: 10px;
+}
+
+.body{
+display: flex;
+/* flex-wrap: wrap; */
+}
+
+.product{
+background-color: rgba(13, 17, 23, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* max-width: 1px; */
+    width: 165px;
+    /* width: fit-content; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bnts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:  center;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 12px;
+    width: fit-content;
+    /* margin-left: 20px; */
+    padding: 5px;
+
+    color: white;
+}
+
+
+
+.image{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;    
+}
+
+.image img{
+    width: 100px;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 40px;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;   
+}
+
+.quantity{
+    margin-right: 20px;
+}
+
+p, h3, h4, a{
+    background-color: transparent;
+}
+
+.about,
+.price,
+.description,
+.footer,
+.quantity,
+.btns{
+    background-color: transparent;
+}
+
+p{
+  color: rgb(164, 164, 164);
+}
+
+h3{
+    color: rgb(240, 228, 228);
+}
+
+h4{
+    color: rgb(188, 185, 185);
+    /* margin-right: 40px; */
+}
+
+.product:hover {
+    /* cursor: pointer; */
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+    box-shadow: -7px -8px 77px -12px rgba(227,88,240,0.46);
+}
+
+.product a{
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+a:hover{
+    cursor: pointer;
+    color: pink;
+    transition: 200ms ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid rgba(227,88,240,0.46);
+    color: pink;
+    transition: 200ms ease-in-out;
+}
+
+
+@media only screen and (min-width: 900px) {
+  
+}

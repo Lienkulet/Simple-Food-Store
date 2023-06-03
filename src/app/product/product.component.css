@@ -1,0 +1,159 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.about h1{
+    margin-left: 10px;
+}
+
+.Nutritional-properties,
+.ingredients,
+.general_info{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.general_info{
+    /* padding: 0px; */
+}
+
+.nutrition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* margin-right: 220px;/ */
+    width: 100%;
+    font-size: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 20px;
+}
+
+.general_info .name{
+    font-size: 18px;
+}
+
+.general_info .value{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 70%;
+    font-size: 18px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.title h4{
+ margin-top: 10px;
+}
+
+.title p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(164, 164, 164);;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;    
+}
+
+.image img{
+    width: 200px;
+}
+
+
+.pricing,
+.value,
+.name,
+.ingredients,
+.nutrition,
+.general_info,
+.item,
+.Nutritional-properties,
+.title,
+.product,
+h3, h5, p, a{
+    background-color: rgba(13, 17, 23, 1);
+}
+
+.product{
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+.btn{
+    background-color: transparent;
+    border: 1px solid rgb(154, 152, 152);
+    border-radius: 12px;
+    width: fit-content;
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid rgba(227,88,240,0.46);
+    color: pink;
+    transition: 200ms ease-in-out;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients p{
+    margin-top: 10px;
+}
